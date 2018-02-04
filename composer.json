@@ -1,0 +1,22 @@
+{
+    "name": "itstructure/yii2-field-widgets",
+    "description": "The form field widgets for Yii2 Framework with multilanguage mode support.",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "yii 2", "field", "widget", "multilanguage"],
+    "require": {
+        "yiisoft/yii2": "~2.0.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrey Girnik",
+            "email": "girnikandrey@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Itstructure\\FieldWidgets\\": "src/"
+        }
+    }
+}
