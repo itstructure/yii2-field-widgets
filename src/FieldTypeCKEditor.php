@@ -16,7 +16,7 @@ class FieldTypeCKEditor extends FieldType
     {
         return $this->getField()
             ->widget(
-                CKEditor::className(),
+                CKEditor::class,
                 [
                     'preset' => $this->preset,
                     'clientOptions' => $this->getOptions()
