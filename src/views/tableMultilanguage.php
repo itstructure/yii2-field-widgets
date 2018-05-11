@@ -1,12 +1,13 @@
 <?php
 
+use yii\base\Model;
 use yii\helpers\{ArrayHelper, Html};
 use Itstructure\FieldWidgets\TableMultilanguageField;
 use Itstructure\FieldWidgets\interfaces\LanguageListInterface;
 
 /** @var LanguageListInterface $languageModel */
 /** @var array[] $fields */
-/** @var \yii\db\ActiveRecord $model */
+/** @var Model $model */
 
 ?>
 

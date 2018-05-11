@@ -4,8 +4,7 @@ namespace Itstructure\FieldWidgets;
 
 use yii\widgets\ActiveForm;
 use yii\helpers\Html;
-use yii\base\{InvalidConfigException, Widget};
-use yii\db\ActiveRecord;
+use yii\base\{Model, InvalidConfigException, Widget};
 use Itstructure\FieldWidgets\interfaces\LanguageFieldInterface;
 
 /**
@@ -18,7 +17,7 @@ use Itstructure\FieldWidgets\interfaces\LanguageFieldInterface;
  * @property string $preset
  * @property bool $ckeditor
  * @property ActiveForm $form
- * @property ActiveRecord $model
+ * @property Model $model
  * @property array $data
  * @property array $options
  * @property bool $hide
@@ -80,7 +79,7 @@ class FieldType extends Widget
     /**
      * The model to which the field corresponds.
      *
-     * @var ActiveRecord
+     * @var Model
      */
     public $model;
 

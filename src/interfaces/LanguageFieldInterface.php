@@ -26,7 +26,7 @@ interface LanguageFieldInterface
     /**
      * Returns default mode.
      *
-     * @return string
+     * @return int
      */
-    public function getDefault(): string;
+    public function getDefault(): int;
 }

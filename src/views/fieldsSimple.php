@@ -1,13 +1,14 @@
 <?php
 
+use yii\base\Model;
 use yii\helpers\ArrayHelper;
+use yii\widgets\ActiveForm;
 use Itstructure\FieldWidgets\FieldType;
 
 /** @var array[] $fields */
-/** @var \yii\db\ActiveRecord $model */
-/** @var \yii\widgets\ActiveForm $form */
+/** @var Model $model */
+/** @var ActiveForm $form */
 ?>
-
 
 <div>
     <?php foreach ($fields as $field): ?>

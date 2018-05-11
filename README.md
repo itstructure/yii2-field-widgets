@@ -1,6 +1,13 @@
 1 Introduction
 ------------
 
+[![Latest Stable Version](https://poser.pugx.org/itstructure/yii2-field-widgets/v/stable)](https://packagist.org/packages/itstructure/yii2-field-widgets)
+[![Latest Unstable Version](https://poser.pugx.org/itstructure/yii2-field-widgets/v/unstable)](https://packagist.org/packages/itstructure/yii2-field-widgets)
+[![License](https://poser.pugx.org/itstructure/yii2-field-widgets/license)](https://packagist.org/packages/itstructure/yii2-field-widgets)
+[![Total Downloads](https://poser.pugx.org/itstructure/yii2-field-widgets/downloads)](https://packagist.org/packages/itstructure/yii2-field-widgets)
+[![Build Status](https://scrutinizer-ci.com/g/itstructure/yii2-field-widgets/badges/build.png?b=master)](https://scrutinizer-ci.com/g/itstructure/yii2-field-widgets/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/itstructure/yii2-field-widgets/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/itstructure/yii2-field-widgets/?branch=master)
+
 This is form field's widgets for the yii2 framework with the next field types:
 
 - text
@@ -13,19 +20,19 @@ This is form field's widgets for the yii2 framework with the next field types:
 - password
 
 ## 2 Dependencies
-- php >= 7
+- php >= 7.1
 - composer
 
 ## 3 Installation
 
 Via composer:
 
-```composer require "itstructure/yii2-field-widgets": "^1.0.0"```
+```composer require "itstructure/yii2-field-widgets": "^1.2.0"```
 
 or in section **require** of composer.json file set the following:
 ```
 "require": {
-    "itstructure/yii2-field-widgets": "^1.0.0"
+    "itstructure/yii2-field-widgets": "^1.2.0"
 }
 ```
 and command ```composer install```, if you install yii2 project extensions first,

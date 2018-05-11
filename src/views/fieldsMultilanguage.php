@@ -1,15 +1,15 @@
 <?php
 
+use yii\base\Model;
 use yii\helpers\ArrayHelper;
-use yii\db\ActiveRecord;
 use yii\widgets\ActiveForm;
 use Itstructure\FieldWidgets\FieldType;
 use Itstructure\FieldWidgets\interfaces\{LanguageListInterface, LanguageFieldInterface};
 
-/** @var LanguageListInterface|ActiveRecord $languageModel */
-/** @var LanguageFieldInterface|ActiveRecord $language */
+/** @var LanguageListInterface $languageModel */
+/** @var LanguageFieldInterface $language */
 /** @var array[] $fields */
-/** @var ActiveRecord $model */
+/** @var Model $model */
 /** @var ActiveForm $form */
 
 function isActive(LanguageFieldInterface $language)

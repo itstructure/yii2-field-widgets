@@ -3,8 +3,7 @@
 namespace Itstructure\FieldWidgets;
 
 use Itstructure\FieldWidgets\interfaces\LanguageListInterface;
-use yii\base\{Model, Widget};
-use yii\db\ActiveRecord;
+use yii\base\{Widget, Model};
 use yii\widgets\ActiveForm;
 
 /**
@@ -13,7 +12,7 @@ use yii\widgets\ActiveForm;
  *
  * @property array $fields
  * @property LanguageListInterface|null $languageModel
- * @property ActiveRecord $model
+ * @property Model $model
  * @property ActiveForm $form
  *
  * @package Itstructure\FieldWidgets
@@ -95,7 +94,7 @@ class Fields extends Widget
     /**
      * Model with fields.
      *
-     * @var ActiveRecord
+     * @var Model
      */
     private $model;
 

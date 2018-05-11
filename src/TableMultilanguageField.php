@@ -2,8 +2,7 @@
 
 namespace Itstructure\FieldWidgets;
 
-use yii\base\{Widget, InvalidConfigException};
-use yii\db\ActiveRecord;
+use yii\base\{Model, Widget, InvalidConfigException};
 use Itstructure\FieldWidgets\interfaces\LanguageFieldInterface;
 
 /**
@@ -12,7 +11,7 @@ use Itstructure\FieldWidgets\interfaces\LanguageFieldInterface;
  *
  * @property string $name
  * @property string $label
- * @property ActiveRecord $model
+ * @property Model $model
  * @property LanguageFieldInterface $language
  * @property string $default
  *
@@ -37,7 +36,7 @@ class TableMultilanguageField extends Widget
     /**
      * The model of the current field.
      *
-     * @var ActiveRecord
+     * @var Model
      */
     public $model;
 

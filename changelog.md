@@ -1,11 +1,22 @@
 ### CHANGE LOG:
 
-**1.1.0:**
+**1.2.0 May 12, 2018:**
+- Modify dependencies: minimum-stability is set to dev.
+- Set prefer-stable is true
+- Add .scrutinizer file.
+- Add badges:
+    - Latest Stable Version
+    - Latest Unstable Version
+    - License
+    - Total Downloads.
+    - Build Status
+    - Scrutinizer Code Quality
+
+**1.1.0 February 13, 2018:**
 - Depricate className() function. Use WidgetClass::class.
 
-**1.0.0:**
+**1.0.0 February 4, 2018:**
 - Create form field's widgets for the yii2 framework with the next field types:
-
     - text
     - textarea
     - ckeditor
