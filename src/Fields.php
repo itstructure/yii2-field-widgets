@@ -155,7 +155,7 @@ class Fields extends Widget
             'form'   => $this->form,
         ];
 
-        if ($this->languageModel === null){
+        if ($this->languageModel === null) {
             $template = 'fieldsSimple';
         } else {
             $template = 'fieldsMultilanguage';

@@ -75,11 +75,11 @@ class TableMultilanguageField extends Widget
      */
     public function run(): string
     {
-        if (null === $this->language){
-            throw  new InvalidConfigException('Language model is not defined.');
+        if (null === $this->language) {
+            throw new InvalidConfigException('Language model is not defined.');
         }
 
-        if (strpos($this->name, '.') !== false){
+        if (strpos($this->name, '.') !== false) {
 
             $out = $this->getDataByPath($this->name);
 
@@ -103,9 +103,10 @@ class TableMultilanguageField extends Widget
         $namePath = explode('.', $name);
         $out = $this->model;
 
-        for ($i=0; $i < count($namePath); $i++){
+        for ($i=0; $i < count($namePath); $i++) {
 
-            $out = $i+1 < count($namePath) ? $out->{$namePath[$i]} : $out->{$namePath[$i].'_'.$this->language->getShortName()};
+            $out = $i+1 < count($namePath) ?
+                $out->{$namePath[$i]} : $out->{$namePath[$i].'_'.$this->language->getShortName()};
 
             if (is_array($out)) {
                 for ($j=0; $j < count($out); $j++) {
@@ -115,6 +116,7 @@ class TableMultilanguageField extends Widget
                 break;
             }
         }
+
         return trim($out, ', ');
     }
 }

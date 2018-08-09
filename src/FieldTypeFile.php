@@ -10,6 +10,9 @@ namespace Itstructure\FieldWidgets;
  */
 class FieldTypeFile extends FieldType
 {
+    /**
+     * @return string
+     */
     public function run(): string
     {
         return $this->getField()

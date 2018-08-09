@@ -1,5 +1,8 @@
 ### CHANGE LOG:
 
+**1.2.1 August 9, 2018:**
+- Code fixes according with the PSR standards.
+
 **1.2.0 May 12, 2018:**
 - Modify dependencies: minimum-stability is set to dev.
 - Set prefer-stable is true

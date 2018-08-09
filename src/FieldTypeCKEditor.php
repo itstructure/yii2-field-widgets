@@ -12,6 +12,9 @@ use Itstructure\CKEditor\CKEditor;
  */
 class FieldTypeCKEditor extends FieldType
 {
+    /**
+     * @return string
+     */
     public function run(): string
     {
         return $this->getField()

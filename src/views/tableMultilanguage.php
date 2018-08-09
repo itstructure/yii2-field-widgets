@@ -21,14 +21,13 @@ use Itstructure\FieldWidgets\interfaces\LanguageListInterface;
     </tr>
 
     <?php foreach ($fields as $field): ?>
-
     <tr>
 
         <td>
             <b><?php echo empty($field['label']) ? $field['name'] : $field['label']; ?></b>
         </td>
-        <?php foreach ($languageModel->getLanguageList() as $language): ?>
 
+        <?php foreach ($languageModel->getLanguageList() as $language): ?>
         <td>
             <?php if ($field['name']== 'image'): ?>
                 <?php echo  Html::img(TableMultilanguageField::widget(
@@ -42,7 +41,6 @@ use Itstructure\FieldWidgets\interfaces\LanguageListInterface;
                         ); ?>
 
             <?php else: ?>
-
                 <?php echo TableMultilanguageField::widget(
                                 ArrayHelper::merge($field,
                                     [
@@ -51,13 +49,12 @@ use Itstructure\FieldWidgets\interfaces\LanguageListInterface;
                                     ]
                                 )
                             ) ?>
-
             <?php endif; ?>
-
         </td>
-
         <?php endforeach; ?>
+
     </tr>
     <?php endforeach; ?>
+
 </tbody>
 </table>

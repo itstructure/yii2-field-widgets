@@ -1,5 +1,8 @@
+Yii2 Field widgets
+==============
+
 1 Introduction
-------------
+----------------------------
 
 [![Latest Stable Version](https://poser.pugx.org/itstructure/yii2-field-widgets/v/stable)](https://packagist.org/packages/itstructure/yii2-field-widgets)
 [![Latest Unstable Version](https://poser.pugx.org/itstructure/yii2-field-widgets/v/unstable)](https://packagist.org/packages/itstructure/yii2-field-widgets)
@@ -19,38 +22,68 @@ This is form field's widgets for the yii2 framework with the next field types:
 - dropdown
 - password
 
-## 2 Dependencies
+2 Dependencies
+----------------------------
+
 - php >= 7.1
 - composer
 
-## 3 Installation
+3 Installation
+----------------------------
+
+### 3.1 Base install
 
 Via composer:
 
-```composer require "itstructure/yii2-field-widgets": "^1.2.0"```
+```composer require "itstructure/yii2-field-widgets": "^1.2.1"```
 
 or in section **require** of composer.json file set the following:
 ```
 "require": {
-    "itstructure/yii2-field-widgets": "^1.2.0"
+    "itstructure/yii2-field-widgets": "^1.2.1"
 }
 ```
 and command ```composer install```, if you install yii2 project extensions first,
 
 or command ```composer update```, if all yii2 project extensions are already installed.
 
-## 4 Usage
+### 3.2 If you are testing this package from local server directory
 
-#### 4.1 Requirements
+In application ```composer.json``` file set the repository, like in example:
+
+```
+"repositories": [
+    {
+        "type": "path",
+        "url": "../yii2-field-widgets",
+        "options": {
+            "symlink": true
+        }
+    }
+],
+```
+
+Here,
+
+**yii2-field-widgets** - directory name, which has the same directory level like application and contains yii2 field widgets package.
+
+Then run command:
+
+```composer require itstructure/yii2-field-widgets:dev-master --prefer-source```
+
+4 Usage
+----------------------------
+
+### 4.1 Requirements
 
 That widgets are designed to work in form with an active **model**, which is inherited from 
 yii\db\ActiveRecord.
 
-#### 4.2 Single mode
+### 4.2 Single mode
 
 To use this mode, don't set ```languageModel```. That will be **null**.
 
-#### 4.3 Multilanguage mode
+### 4.3 Multilanguage mode
 
 All fields will be with a language postfix:
 
@@ -105,7 +138,9 @@ echo Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $
 ActiveForm::end();
 ```
 
-## License
+License
+----------------------------
+
 Copyright © 2018 Andrey Girnik girnikandrey@gmail.com.
 
 Licensed under the [MIT license](http://opensource.org/licenses/MIT). See LICENSE.txt for details.

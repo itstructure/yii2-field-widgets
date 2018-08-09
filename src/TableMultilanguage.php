@@ -89,7 +89,7 @@ class TableMultilanguage extends Widget
      */
     public function run(): string
     {
-        if (null === $this->languageModel){
+        if (null === $this->languageModel) {
             throw new InvalidConfigException('Language model is not defined.');
         }
 

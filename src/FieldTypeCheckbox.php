@@ -12,6 +12,9 @@ use yii\helpers\ArrayHelper;
  */
 class FieldTypeCheckbox extends FieldType
 {
+    /**
+     * @return string
+     */
     public function run(): string
     {
         return $this->getField()

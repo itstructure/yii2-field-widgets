@@ -134,7 +134,7 @@ class FieldType extends Widget
      */
     public function run()
     {
-        if ($this->hide){
+        if ($this->hide) {
             return '';
         }
 
@@ -249,7 +249,7 @@ class FieldType extends Widget
             'preset'  => $this->preset,
         ];
 
-        if ($this->language !== null){
+        if ($this->language !== null) {
             $config['language'] = $this->language;
         }
 
@@ -291,7 +291,7 @@ class FieldType extends Widget
      */
     protected function getFieldName(): string
     {
-        if ($this->language === null){
+        if ($this->language === null) {
             return $this->name;
         }
 

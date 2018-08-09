@@ -12,6 +12,9 @@ use yii\helpers\{ArrayHelper, Html};
  */
 class FieldTypeTextArea extends FieldType
 {
+    /**
+     * @return string
+     */
     public function run(): string
     {
         return $this->getField()
