@@ -1,5 +1,8 @@
 ### CHANGE LOG:
 
+**1.2.2 August 10, 2018:**
+- Change display translates in ```tableMultilanguage``` file by tabs.
+
 **1.2.1 August 9, 2018:**
 - Code fixes according with the PSR standards.
 

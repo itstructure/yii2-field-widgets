@@ -13,7 +13,7 @@ use Itstructure\FieldWidgets\FieldType;
 <div>
     <?php foreach ($fields as $field): ?>
 
-        <?php if (null === $field || empty($field)) {
+        <?php if (empty($field)) {
             continue;
         } ?>
 

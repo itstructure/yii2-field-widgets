@@ -3,6 +3,7 @@
 use yii\base\Model;
 use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;
+use Itstructure\FieldWidgets\helpers\Helper;
 use Itstructure\FieldWidgets\FieldType;
 use Itstructure\FieldWidgets\interfaces\{LanguageListInterface, LanguageFieldInterface};
 
@@ -11,16 +12,11 @@ use Itstructure\FieldWidgets\interfaces\{LanguageListInterface, LanguageFieldInt
 /** @var array[] $fields */
 /** @var Model $model */
 /** @var ActiveForm $form */
-
-function isActive(LanguageFieldInterface $language)
-{
-    return $language->getDefault() == 1 ? 'active' : '';
-}
 ?>
 
 <ul class="nav nav-tabs" id="languages">
     <?php foreach ($languageModel->getLanguageList() as $language): ?>
-        <li class="<?php echo isActive($language) ?>">
+        <li class="<?php echo Helper::isActiveTab($language) ?>">
             <a href="#<?php echo $language->getShortName() ?>" data-toggle="tab"><?php echo $language->getName() ?></a>
         </li>
     <?php endforeach; ?>
@@ -28,11 +24,11 @@ function isActive(LanguageFieldInterface $language)
 
 <div class="tab-content">
     <?php foreach ($languageModel->getLanguageList() as $language): ?>
-        <div class="tab-pane <?php echo isActive($language) ?>" id="<?php echo $language->getShortName() ?>">
+        <div class="tab-pane <?php echo Helper::isActiveTab($language) ?>" id="<?php echo $language->getShortName() ?>">
 
             <?php foreach ($fields as $field): ?>
 
-                <?php if (null === $field || empty($field)) {
+                <?php if (empty($field)) {
                     continue;
                 } ?>
 
