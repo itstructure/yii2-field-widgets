@@ -1,8 +1,7 @@
 Yii2 Field widgets
 ==============
 
-1 Introduction
-----------------------------
+## Introduction
 
 [![Latest Stable Version](https://poser.pugx.org/itstructure/yii2-field-widgets/v/stable)](https://packagist.org/packages/itstructure/yii2-field-widgets)
 [![Latest Unstable Version](https://poser.pugx.org/itstructure/yii2-field-widgets/v/unstable)](https://packagist.org/packages/itstructure/yii2-field-widgets)
@@ -22,36 +21,36 @@ This is form field's widgets for the yii2 framework with the next field types:
 - dropdown
 - password
 
-2 Dependencies
-----------------------------
+## Dependencies
 
 - php >= 7.1
 - composer
 
-3 Installation
-----------------------------
+## Installation
 
-### 3.1 Base install
+### Base install
 
 Via composer:
 
-```composer require "itstructure/yii2-field-widgets": "^1.2.2"```
+`composer require "itstructure/yii2-field-widgets": "~1.2.3"`
 
 or in section **require** of composer.json file set the following:
-```
+
+```json
 "require": {
-    "itstructure/yii2-field-widgets": "^1.2.2"
+    "itstructure/yii2-field-widgets": "~1.2.3"
 }
 ```
-and command ```composer install```, if you install yii2 project extensions first,
 
-or command ```composer update```, if all yii2 project extensions are already installed.
+and command `composer install`, if you install yii2 project extensions first,
 
-### 3.2 If you are testing this package from local server directory
+or command `composer update`, if all yii2 project extensions are already installed.
 
-In application ```composer.json``` file set the repository, like in example:
+### If you are testing this package from local server directory
 
-```
+In application `composer.json` file set the repository, like in example:
+
+```json
 "repositories": [
     {
         "type": "path",
@@ -69,21 +68,20 @@ Here,
 
 Then run command:
 
-```composer require itstructure/yii2-field-widgets:dev-master --prefer-source```
+`composer require itstructure/yii2-field-widgets:dev-master --prefer-source`
 
-4 Usage
-----------------------------
+## Usage
 
-### 4.1 Requirements
+### Requirements
 
 That widgets are designed to work in form with an active **model**, which is inherited from 
 yii\db\ActiveRecord.
 
-### 4.2 Single mode
+### Single mode
 
-To use this mode, don't set ```languageModel```. That will be **null**.
+To use this mode, don't set `languageModel`. That will be **null**.
 
-### 4.3 Multilanguage mode
+### Multilanguage mode
 
 All fields will be with a language postfix:
 
@@ -138,9 +136,8 @@ echo Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $
 ActiveForm::end();
 ```
 
-License
-----------------------------
+## License
 
-Copyright © 2018 Andrey Girnik girnikandrey@gmail.com.
+Copyright © 2018-2020 Andrey Girnik girnikandrey@gmail.com.
 
 Licensed under the [MIT license](http://opensource.org/licenses/MIT). See LICENSE.txt for details.

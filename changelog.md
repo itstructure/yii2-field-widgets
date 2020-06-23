@@ -1,5 +1,8 @@
 ### CHANGE LOG:
 
+**1.2.3 June 24, 2020:**
+- Modify README syntax.
+
 **1.2.2 August 10, 2018:**
 - Change display translates in ```tableMultilanguage``` file by tabs.
 
