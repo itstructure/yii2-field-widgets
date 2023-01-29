@@ -1,5 +1,8 @@
 ### CHANGE LOG:
 
+**1.2.4 January 29, 2023:**
+- Upgrade copyright year.
+
 **1.2.3 June 24, 2020:**
 - Modify README syntax.
 

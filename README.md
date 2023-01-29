@@ -32,13 +32,13 @@ This is form field's widgets for the yii2 framework with the next field types:
 
 Via composer:
 
-`composer require "itstructure/yii2-field-widgets": "~1.2.3"`
+`composer require "itstructure/yii2-field-widgets": "~1.2.4"`
 
 or in section **require** of composer.json file set the following:
 
 ```json
 "require": {
-    "itstructure/yii2-field-widgets": "~1.2.3"
+    "itstructure/yii2-field-widgets": "~1.2.4"
 }
 ```
 
@@ -138,6 +138,6 @@ ActiveForm::end();
 
 ## License
 
-Copyright © 2018-2020 Andrey Girnik girnikandrey@gmail.com.
+Copyright © 2018-2023 Andrey Girnik girnikandrey@gmail.com.
 
 Licensed under the [MIT license](http://opensource.org/licenses/MIT). See LICENSE.txt for details.
